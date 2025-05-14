@@ -3,6 +3,9 @@
 This README outlines key **data and modeling assumptions** for a healthcare dataset designed using a **star schema** approach. The model supports analytical use cases related to patient visits, diagnoses, and treatments, with an emphasis on flexibility, scalability, and regulatory compliance (e.g., HIPAA/GDPR).
 
 ---
+## Data Model
+
+![Data Model](assets/architecture.png)
 
 ## 📊 Data Assumptions
 
