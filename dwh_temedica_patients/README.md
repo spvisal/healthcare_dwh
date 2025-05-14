@@ -1,15 +1,25 @@
-Welcome to your new dbt project!
+# dbt Project
 
-### Using the starter project
+This project contains the code for a dbt (data build tool) transformation workflow.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Structure
 
+### models/
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- **staging/**  
+  Contains the source models. In this folder, you can find the source tables and some tests related to them.
+
+- **marts/**  
+  Contains the core business logic, including all dimension and fact tables. Tests have been added specifically for the fact tables.
+
+### tests/
+
+- This folder contains custom tests created for the project.  
+  A key custom test included here checks for **valid dates** across relevant models.
+
+## Notes
+
+- dbt is used to manage transformations in the analytics engineering workflow.
+- The structure separates raw source models (staging) from business logic (marts).
+- Custom data quality checks enhance the reliability of outputs, particularly around date validity.
+
