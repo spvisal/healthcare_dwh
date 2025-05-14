@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_patients_visits
+    description: "Staging table for patients visits and their details"
+    columns:
+      - name: visit_id
+
+        tests:
+          - not_null
+      - name: patient_id
+        tests:
+          - not_null
+      - name: visit_date
+        tests:
+          - not_null
+      - name: diagnosis_code
+        tests:
+          - not_null

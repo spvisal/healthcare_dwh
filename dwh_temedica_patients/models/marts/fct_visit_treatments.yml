@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: fct_visit_treatments
+    description: "Granular fact model for treatment given for diagnosis in each visit."
+    columns:
+      - name: fact_id
+        tests:
+          - unique
+          - not_null
+
+      - name: patient_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_patients')
+              field: patient_sk
+
+      - name: diagnosis_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_diagnoses')
+              field: diagnosis_sk
+
+      - name: treatments_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_treatments')
+              field: treatments_sk
+
+      - name: visit_date_sk
+        tests:
+          - not_null

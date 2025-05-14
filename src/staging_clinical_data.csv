@@ -1,0 +1,4 @@
+patient_id,patient_name,visit_id,visit_date,diagnosis_code,diagnosis_desc,drug,dose,provider_notes,provider_name
+P-1001,John Doe,V-2023-001,2023-05-01,ICD-10:E11.9,Type 2 diabetes,Metformin,500mg,Patient reported improved symptoms.,Dr. Smith
+P-1001,John Doe,V-2023-001,2023-05-01,ICD-10:E11.9,Type 2 diabetes,Insulin,10 units,Patient reported improved symptoms.,Dr. Smith
+P-1001,John Doe,V-2023-001,2023-05-01,ICD-15:E11.,Sever Stomach Pain,Metformin,100mg,Patient reported improved symptoms.,Dr. Smith

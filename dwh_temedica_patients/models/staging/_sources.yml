@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public
+    database: temedica
+    description: "Raw data source from temedica"
+    tables:
+      - name: patients_visits
