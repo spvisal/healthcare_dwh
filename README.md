@@ -7,6 +7,8 @@ This README outlines key **data and modeling assumptions** for a healthcare data
 
 ![Data Model](assets/architecture.png)
 
+---
+
 ## 📊 Data Assumptions
 
 - Each **patient** can have **one or more visits**.
