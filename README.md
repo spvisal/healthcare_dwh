@@ -63,6 +63,7 @@ We are using a **star schema** composed of:
 | Separate `dim_treatments` and `dim_diagnoses` | Clean, reusable, deduplicated data | Requires joins for joint analysis |
 | Keeping visit info in fact table | Simple design, immediate availability | May require schema changes if visit metadata grows |
 | Potential `dim_visit` creation | Enables reuse, normalization, better reporting | Adds complexity |
+| No incremental model in dbt | Simple design for very small workload | As the size increases, should think of adding support incremental models |
 
 > **Note:** If combining diagnoses and treatments into one dimension, you simplify the schema and can analyze "how diagnoses are treated" more directly—but at the cost of **redundancy** and **loss of flexibility**.
 
