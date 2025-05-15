@@ -67,5 +67,7 @@ We are using a **star schema** composed of:
 
 > **Note:** If combining diagnoses and treatments into one dimension, you simplify the schema and can analyze "how diagnoses are treated" more directly—but at the cost of **redundancy** and **loss of flexibility**.
 
-
+### Talk ABout
+- Performance Management - Indexing and partitioning
+- Handling Data Security
 
